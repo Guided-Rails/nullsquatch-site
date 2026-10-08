@@ -1,8 +1,9 @@
 # nullsquatch-site
 
 Static placeholder for https://nullsquatch.com, served by GitHub Pages from
-`main` at the repo root. Plain HTML with inline CSS: no build step, no
-framework, no JavaScript, no analytics.
+`main` at the repo root. Plain HTML styled with Tailwind from the CDN to match
+guidedrails.com: no build step, no analytics. The only JavaScript is the
+Tailwind CDN script and its inline config (the `brand` color).
 
 - `index.html`: the landing page.
 - `privacy.html`: the privacy policy stub, served at `/privacy`.

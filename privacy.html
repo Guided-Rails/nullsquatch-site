@@ -1,32 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Null Squatch privacy policy</title>
-  <style>
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f1a14; color: #e8efe9; }
-    main { max-width: 36rem; margin: 0 auto; padding: 4rem 1.25rem; }
-    h1 { font-size: 2rem; margin: 0 0 1rem; }
-    p, li { font-size: 1.125rem; line-height: 1.5; }
-    a { color: #8fd3a0; }
-    footer { margin-top: 4rem; font-size: 0.875rem; color: #9fb3a6; }
-  </style>
+  <meta name="description" content="What the Null Squatch app collects and why.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#7a1f5c"
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <main>
-    <h1>Privacy policy</h1>
-    <p>Null Squatch is in development and has not been publicly released. This page describes what the app will collect once it is available, and will be expanded before public release.</p>
-    <p>The app will collect:</p>
-    <ul>
-      <li><strong>Location traces.</strong> While you record a walk, the app logs your route so it can mark the ground you covered on the map. Traces are uploaded to our servers when the walk ends.</li>
-      <li><strong>Apple sign-in identifier.</strong> If you sign in with Apple, we store the identifier Apple gives us so we can keep your coverage and stats tied to your account.</li>
-    </ul>
-    <p>We do not sell your data and we do not run third-party analytics or advertising.</p>
-    <p>Questions: <a href="mailto:hello@nullsquatch.com">hello@nullsquatch.com</a></p>
-    <footer>
-      <a href="/">Back to Null Squatch</a>
-    </footer>
+<body class="bg-white text-gray-900 antialiased flex min-h-screen flex-col">
+  <header class="border-t-8 border-brand">
+    <div class="mx-auto flex w-[min(100vw_-_3rem,80rem)] items-center justify-between py-6">
+      <a href="/" class="text-lg font-semibold tracking-tight text-brand">Null Squatch</a>
+      <nav class="flex gap-6 text-sm text-gray-600">
+        <a href="/privacy" class="hover:text-gray-900">Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-1 w-full max-w-2xl mx-auto px-6 py-16">
+    <article class="prose prose-gray max-w-none">
+      <h1>Privacy policy</h1>
+      <p>Null Squatch is in development and has not been publicly released. This page describes what the app will collect once it is available, and will be expanded before public release.</p>
+      <p>The app will collect:</p>
+      <ul>
+        <li><strong>Location traces.</strong> While you record a walk, the app logs your route so it can mark the ground you covered on the map. Traces are uploaded to our servers when the walk ends.</li>
+        <li><strong>Apple sign-in identifier.</strong> If you sign in with Apple, we store the identifier Apple gives us so we can keep your coverage and stats tied to your account.</li>
+      </ul>
+      <p>We do not sell your data and we do not run third-party analytics or advertising.</p>
+      <p>Questions: <a href="mailto:hello@nullsquatch.com">hello@nullsquatch.com</a></p>
+    </article>
   </main>
+  <footer class="border-t-8 border-brand">
+    <div class="mx-auto flex w-[min(100vw_-_3rem,80rem)] justify-between gap-6 py-8 text-sm text-gray-600">
+      <span>&copy; 2026 Guided Rails, LLC. All rights reserved.</span>
+      <nav class="flex gap-6">
+        <a href="/" class="hover:text-gray-900">Home</a>
+        <a href="/privacy" class="hover:text-gray-900">Privacy</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

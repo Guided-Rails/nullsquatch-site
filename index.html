@@ -1,28 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Null Squatch</title>
   <meta name="description" content="Walk around, and the app proves where Bigfoot is not.">
-  <style>
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f1a14; color: #e8efe9; }
-    main { max-width: 36rem; margin: 0 auto; padding: 4rem 1.25rem; }
-    h1 { font-size: 2.5rem; margin: 0 0 0.5rem; }
-    p { font-size: 1.125rem; line-height: 1.5; }
-    a { color: #8fd3a0; }
-    footer { margin-top: 4rem; font-size: 0.875rem; color: #9fb3a6; }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#7a1f5c"
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <main>
-    <h1>Null Squatch</h1>
-    <p>Walk around, and the app proves where Bigfoot is <em>not</em>. Every mile you cover shrinks the map of places he could still be hiding.</p>
-    <p>Coming to iOS via TestFlight.</p>
-    <p>Questions? <a href="mailto:hello@nullsquatch.com">hello@nullsquatch.com</a></p>
-    <footer>
-      <a href="/privacy">Privacy policy</a>
-    </footer>
+<body class="bg-white text-gray-900 antialiased flex min-h-screen flex-col">
+  <header class="border-t-8 border-brand">
+    <div class="mx-auto flex w-[min(100vw_-_3rem,80rem)] items-center justify-between py-6">
+      <a href="/" class="text-lg font-semibold tracking-tight text-brand">Null Squatch</a>
+      <nav class="flex gap-6 text-sm text-gray-600">
+        <a href="/privacy" class="hover:text-gray-900">Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-1 w-full max-w-2xl mx-auto px-6 py-16">
+    <section class="relative left-1/2 mb-16 w-[min(100vw_-_3rem,80rem)] -translate-x-1/2">
+      <h1 class="max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">Walk around, and the app proves where Bigfoot is <em>not</em>.</h1>
+      <p class="mt-6 max-w-2xl text-lg text-gray-600">
+        Every mile you cover shrinks the map of places he could still be hiding.
+      </p>
+      <a href="mailto:hello@nullsquatch.com" class="mt-8 inline-block rounded-md bg-brand px-4 py-2 text-white hover:bg-brand/90">Get in touch</a>
+    </section>
+
+    <section class="relative left-1/2 mb-16 w-[min(100vw_-_3rem,80rem)] -translate-x-1/2">
+      <h2 class="text-lg font-medium">Status</h2>
+      <p class="mt-2 text-gray-600">
+        Where the app is today.
+      </p>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <div class="flex min-w-0 flex-col rounded-lg border border-gray-200 p-6">
+          <div class="flex items-center gap-3">
+            <h3 class="text-base font-medium">iOS app</h3>
+            <span class="rounded-full border border-gray-300 px-2 py-0.5 text-xs text-gray-600">Coming soon</span>
+          </div>
+          <p class="mt-2 text-gray-600">
+            Null Squatch is in development and will arrive on iOS via TestFlight first. Record a walk, and the ground you covered gets marked off the map.
+          </p>
+          <div class="mt-auto flex flex-wrap gap-3 pt-4 text-sm">
+            <a href="mailto:hello@nullsquatch.com?subject=TestFlight" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">Ask about TestFlight</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="border-t-8 border-brand">
+    <div class="mx-auto flex w-[min(100vw_-_3rem,80rem)] justify-between gap-6 py-8 text-sm text-gray-600">
+      <span>&copy; 2026 Guided Rails, LLC. All rights reserved.</span>
+      <nav class="flex gap-6">
+        <a href="/privacy" class="hover:text-gray-900">Privacy</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
